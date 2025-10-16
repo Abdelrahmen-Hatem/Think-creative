@@ -5,52 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Think Creative Agency - Think Growth, Think Different. A multidisciplinary creative and marketing agency that blends strategy, design, and storytelling.">
+        content="Think Creative Agency | Top Marketing & Branding Agency in Egypt, UAE & UK. We blend strategy, design & storytelling to build powerful brands. Think Growth, Think Different.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thinkagency.net" />
 
     <!-- Open Graph / Social Meta Tags -->
-    <meta property="og:title" content="Think Creative Agency">
+    <meta property="og:title" content="Think Creative Agency | Marketing & Branding Experts">
     <meta property="og:description"
-        content="Think Growth, Think Different. A multidisciplinary creative and marketing agency that blends strategy, design, and storytelling.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
+        content="Top creative agency in Egypt, UAE & UK. We help ambitious brands turn ideas into powerful identities, stories into connections, and presence into performance.">
+    <meta property="og:image" content="https://thinkagency.net/assets/images/og-image.jpg">
     <meta property="og:url" content="https://thinkagency.net">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Think Creative Agency">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Think Creative Agency">
+    <meta name="twitter:title" content="Think Creative Agency | Marketing & Branding Experts">
     <meta name="twitter:description"
-        content="Think Growth, Think Different. A multidisciplinary creative and marketing agency that blends strategy, design, and storytelling.">
-    <meta name="twitter:image" content="assets/images/og-image.jpg">
+        content="Top creative agency in Egypt, UAE & UK. We help ambitious brands turn ideas into powerful identities, stories into connections, and presence into performance.">
+    <meta name="twitter:image" content="https://thinkagency.net/assets/images/og-image.jpg">
+    
+    <!-- Force favicon refresh -->
+    <meta name="theme-color" content="#00aeef">
+    
+    <!-- hreflang tags for multilingual support -->
+    <link rel="alternate" hreflang="en" href="https://thinkagency.net" />
+    <link rel="alternate" hreflang="ar" href="https://thinkagency.net/ar" />
+    <link rel="alternate" hreflang="x-default" href="https://thinkagency.net" />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Think Creative Agency",
-    "url": "https://thinkagency.net",
-    "logo": "assets/logo/think-logo-horizontal.svg",
-    "sameAs": [
-      "https://www.facebook.com/thinkcreativegency",
-      "https://www.instagram.com/thinkagency.eg",
-      "https://www.tiktok.com/@thinkagency.eg"
-    ]
-  }
-  </script>
-
-    <title>Think Creative Agency</title>
+    <title>Think Creative Agency | Top Marketing & Branding Agency Egypt, UAE, UK</title>
 
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts with optimized loading -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700&display=swap">
+    </noscript>
 
     <!-- Compiled CSS -->
     <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1.0">
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      /* Critical styles for hero section */
+      .hero {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(11, 11, 11, 0.9) 100%);
+        z-index: -1;
+      }
+      
+      .hero-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+      
+      .accent {
+        color: #00aeef;
+      }
+      
+      /* Performance optimization for mobile */
+      @media (max-width: 767px) {
+        .hero-title {
+          font-size: clamp(2rem, 8vw, 3rem);
+        }
+      }
+    </style>
 </head>
 
 <body class="page-dark">
@@ -58,16 +109,17 @@
     <header class="site-header" role="banner">
         <div class="container header-inner">
             <a class="logo" href="/">
-                <img src="assets/logo/think-logo-horizontal.svg" alt="Think Creative Agency">
+                <img src="assets/logo/think-logo-horizontal.svg" alt="Think Creative Agency - Top Marketing & Branding Agency">
             </a>
 
             <nav class="main-nav" role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#mission">Mission & Values</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                 </ul>
             </nav>
 
@@ -83,11 +135,11 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-inner">
-                <h1 class="hero-title">Think Growth, Think <span class="accent">Different. </span></h1>
-                <p class="hero-sub">Turning ideas into visual impact.</p>
+                <h1 class="hero-title">Think Growth, Think <span class="accent">Different.</span></h1>
+                <p class="hero-sub">Top Creative & Marketing Agency in Egypt, UAE & UK | Transforming Ideas into Powerful Brand Identities</p>
                 <div class="hero-ctas">
-                    <a class="btn-primary" href="#contact">Start your brand journey</a>
-                    <a class="btn-ghost" href="#services">See our services</a>
+                    <a class="btn-primary" href="#contact">Start Your Brand Journey</a>
+                    <a class="btn-ghost" href="#services">Explore Our Services</a>
                 </div>
             </div>
         </section>
@@ -95,33 +147,24 @@
         <!-- About Section -->
         <section id="about" class="about container section">
             <div class="about-content">
-                <h2 class="accent">About Us</h2>
-                <p>At Think Creative Agency, we don't just market brands - we build them. We are a multidisciplinary
-                    creative and marketing agency that blends strategy, design, and storytelling to help businesses grow
-                    and stand out in competitive markets. We believe that creativity without direction is chaos, and
-                    direction without creativity is noise - that's why we combine both. We don't follow trends, we
-                    create them.</p>
-                <p>We are the team behind the spotlight - the ones who make brands visible, loved, and trusted. Our
-                    agency was built on one principle: great brands don't happen by chance, they happen by strategy. We
-                    guide our clients through the full journey - from concept to campaign, from identity to impact. We
-                    understand how brands rise, what makes them win, and how to make people believe in them. Whether
-                    it's building a name from scratch, launching a cinematic commercial, or growing a digital presence -
-                    we make your brand the strongest piece on the board.</p>
+                <h2 class="accent">About Think Creative Agency</h2>
+                <p>At Think Creative Agency, we don't just market brands - we build them. As a leading <strong>creative agency in Egypt, UAE, and UK</strong>, we blend strategy, design, and storytelling to help businesses grow and stand out in competitive markets. We believe that creativity without direction is chaos, and direction without creativity is noise - that's why we combine both strategically.</p>
+                <p>We are the team behind the spotlight - the ones who make brands visible, loved, and trusted. Our <strong>marketing agency</strong> was built on one principle: great brands don't happen by chance, they happen by strategy. We guide our clients through the full journey - from concept to campaign, from identity to impact. Whether it's building a name from scratch, launching a cinematic commercial, or growing a digital presence - we make your brand the strongest piece on the board.</p>
             </div>
 
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-number" data-count="100">80</div>
+                    <div class="stat-number" data-count="100">100</div>
                     <div class="stat-label">Projects</div>
                 </div>
 
                 <div class="stat-item">
-                    <div class="stat-number" data-count="8">4</div>
+                    <div class="stat-number" data-count="8">8</div>
                     <div class="stat-label">Services</div>
                 </div>
 
                 <div class="stat-item">
-                    <div class="stat-number" data-count="3">1</div>
+                    <div class="stat-number" data-count="3">3</div>
                     <div class="stat-label">Countries</div>
                 </div>
             </div>
@@ -131,15 +174,13 @@
         <section id="mission" class="mission container section">
             <div class="mission-grid">
                 <div class="mission-card">
-                    <h3>Vision</h3>
-                    <p>To lead the creative industry in the MENA region by redefining how brands grow - through
-                        innovation, storytelling, and strategic intelligence.</p>
+                    <h3>Our Vision as a Creative Agency</h3>
+                    <p>To lead the creative industry in the MENA region by redefining how brands grow - through innovation, storytelling, and strategic intelligence.</p>
                 </div>
 
                 <div class="mission-card">
-                    <h3>Mission</h3>
-                    <p>To help ambitious brands turn their ideas into powerful identities, their stories into
-                        connections, and their presence into performance.</p>
+                    <h3>Our Mission</h3>
+                    <p>To help ambitious brands turn their ideas into powerful identities, their stories into connections, and their presence into performance.</p>
                 </div>
 
                 <div class="mission-card">
@@ -170,61 +211,61 @@
 
         <!-- Services Section -->
         <section id="services" class="services container section">
-            <h2>Our Services</h2>
+            <h2>Our Creative & Marketing Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">♞</div>
                     <h3>Marketing Strategy & Campaigns</h3>
-                    <p>Strategic marketing planning that connects vision to measurable results.</p>
+                    <p>Strategic marketing planning that connects vision to measurable results. Our <strong>marketing agency</strong> creates data-driven campaigns that deliver ROI.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♜</div>
                     <h3>Social Media Management</h3>
-                    <p>Managing your brand's presence, growth, and engagement across platforms.</p>
+                    <p>Managing your brand's presence, growth, and engagement across platforms. Expert <strong>social media marketing</strong> services for businesses.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♝</div>
                     <h3>Video Editing & Post-Production</h3>
-                    <p>Crafting powerful visuals from raw materials to tell compelling stories.</p>
+                    <p>Crafting powerful visuals from raw materials to tell compelling stories. Professional <strong>video editing services</strong> for brands.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♛</div>
                     <h3>Full Film Making</h3>
-                    <p>From idea to final cinematic release.</p>
+                    <p>From idea to final cinematic release. Premium <strong>filmmaking services</strong> for commercials, corporate videos, and creative projects.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♚</div>
                     <h3>Branding & Identity Design</h3>
-                    <p>Building visual and verbal identities that define your brand.</p>
+                    <p>Building visual and verbal identities that define your brand. Expert <strong>branding agency</strong> services for memorable brand identities.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♟</div>
                     <h3>Social Media Design</h3>
-                    <p>Designing scroll-stopping visuals for every platform.</p>
+                    <p>Designing scroll-stopping visuals for every platform. Creative <strong>social media design</strong> that boosts engagement.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♙</div>
                     <h3>Photography</h3>
-                    <p>Professional photography sessions that capture emotion and story.</p>
+                    <p>Professional photography sessions that capture emotion and story. High-quality <strong>brand photography</strong> services.</p>
                     <a href="#">Learn more →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">♔</div>
                     <h3>Web & App Development</h3>
-                    <p>Building responsive, functional, and visually aligned digital platforms.</p>
+                    <p>Building responsive, functional, and visually aligned digital platforms. Expert <strong>web development agency</strong> services.</p>
                     <a href="#">Learn more →</a>
                 </div>
             </div>
@@ -233,8 +274,8 @@
         <!-- Contact Section -->
         <section id="contact" class="contact container section">
             <div class="contact-form">
-                <h2>Get in touch</h2>
-                <p>Have a project in mind? Let's talk about how we can help bring your vision to life.</p>
+                <h2>Contact Think Creative Agency</h2>
+                <p>Have a project in mind? Let's talk about how we can help bring your vision to life. As a leading <strong>creative agency in Egypt, UAE, and UK</strong>, we're ready to transform your brand.</p>
 
                 <form id="contactForm" action="https://formspree.io/f/mgvnrndb" method="POST">
                     <div class="form-group">
@@ -306,13 +347,13 @@
 
                 <div class="social-links">
                     <a href="https://www.facebook.com/thinkcreativegency" aria-label="Facebook" target="_blank">
-                        <img src="assets/icons/social/facebook.svg" alt="Facebook">
+                        <img src="assets/icons/social/facebook.svg" alt="Think Creative Agency Facebook">
                     </a>
                     <a href="https://www.instagram.com/thinkagency.eg" aria-label="Instagram" target="_blank">
-                        <img src="assets/icons/social/instagram.svg" alt="Instagram">
+                        <img src="assets/icons/social/instagram.svg" alt="Think Creative Agency Instagram">
                     </a>
                     <a href="https://www.tiktok.com/@thinkagency.eg" aria-label="TikTok" target="_blank">
-                        <img src="assets/icons/social/tiktok.svg" alt="TikTok">
+                        <img src="assets/icons/social/tiktok.svg" alt="Think Creative Agency TikTok">
                     </a>
                 </div>
             </div>
